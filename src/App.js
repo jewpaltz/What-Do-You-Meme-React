@@ -4,6 +4,8 @@ import './App.css';
 import Nav from './components/Nav';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Play from './views/Play';
+import './services/firebase';
+import Profile from "./views/Profile";
 
 const Index = () => <h2>Home</h2>;
 const About = () => <h2>About</h2>;
@@ -22,6 +24,7 @@ class App extends Component {
         <Route path="/" exact component={Index} />
         <Route path="/about/" component={About} />
         <Route path="/play/" component={Play} />
+        <Route path="/profile/" component={Profile} />
       </div>
       </Router>  
    );
